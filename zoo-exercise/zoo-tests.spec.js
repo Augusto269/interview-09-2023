@@ -7,7 +7,7 @@ describe('Test zoo app', () => {
         beforeEach(() => {
             zoo = zooCreation();
         });
-        test('Create a zoo whit basic animals', () => {
+        test('Create a zoo with basic animals', () => {
             expect(zoo).toEqual(listOfAnimals);
         });
         describe('test zoo animals', () => {
@@ -19,7 +19,7 @@ describe('Test zoo app', () => {
                 const tigerAnimal = zoo.find((animal) => animal.species === 'tiger');
                 expect(tigerAnimal.speak('Lions suck')).toBe('Lions grrr suck grrr');
             });
-            test('lion can talk whit send any phrase', () => {
+            test('lion can talk with send any phrase', () => {
                 const lionAnimal = zoo.find((animal) => animal.species === 'lion');
                 expect(lionAnimal.speak('')).toBe('roar');
             });
@@ -58,7 +58,7 @@ describe('Test zoo app', () => {
                     expect(err).toHaveProperty('message', 'Animal must have name, species and sound');
                 }
             });
-            test('zooCreation new animals  whitout parameters', () => {
+            test('zooCreation new animals  without parameters', () => {
                 try {
                     zooCreation({});
                 } catch (err) {
@@ -66,7 +66,7 @@ describe('Test zoo app', () => {
                     expect(err).toHaveProperty('message', 'Animal must have name, species and sound');
                 }
             });
-            test('zooCreation whit a new animals is array', () => {
+            test('zooCreation with a new animals is array', () => {
                 try {
                     zooCreation([]);
                 } catch (err) {
@@ -74,7 +74,7 @@ describe('Test zoo app', () => {
                     expect(err).toHaveProperty('message', 'Animal must be an object');
                 }
             });
-            test('zooCreation whit a new animals is string', () => {
+            test('zooCreation with a new animals is string', () => {
                 try {
                     zooCreation('string');
                 } catch (err) {
@@ -82,7 +82,7 @@ describe('Test zoo app', () => {
                     expect(err).toHaveProperty('message', 'Animal must be an object');
                 }
             })
-            test('zooCreation whit a new animals is number', () => {
+            test('zooCreation with a new animals is number', () => {
                 try {
                     zooCreation(123);
                 } catch (err) {
@@ -90,7 +90,7 @@ describe('Test zoo app', () => {
                     expect(err).toHaveProperty('message', 'Animal must be an object');
                 }
             })
-            test('zooCreation whit a new animals is not defined', () => {
+            test('zooCreation with a new animals is not defined', () => {
                 try {
                     zooCreation();
                 } catch (err) {
