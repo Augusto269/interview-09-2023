@@ -7,15 +7,15 @@ During the interview, three technical exercises were requested. To run each one,
 1. Navigate to the desired folder for exercise:
 
 ```javascript
-> cd exercise;
+> cd exercise
 ```
 2. Install decencies:
 
 ```javascript
-npm run i;
+npm run i
 ```
 3. Run tests:
 
 ```javascript
-npm run test;
+npm run test
 ```
