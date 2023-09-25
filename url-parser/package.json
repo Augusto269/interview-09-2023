@@ -1,0 +1,16 @@
+{
+    "name": "url-parser",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --silent=false"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "^29.7.0",
+        "prettier": "3.0.3"
+    }
+}
