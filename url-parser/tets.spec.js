@@ -24,7 +24,6 @@ describe('Parse and hash url APP', () => {
     const urlFormat = '/:image/:id/:width/:height';
     const urlInstance = 'www.google.com/dog/3/300/600?sort=desc&limit=10&imageSearch=dog';
     const urlParsedAndHashed = parseURL(urlFormat, urlInstance);
-    console.log(urlParsedAndHashed);
     expect(urlParsedAndHashed).toEqual({
       image: 'dog',
       width: 300,
